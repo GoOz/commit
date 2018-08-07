@@ -43,7 +43,8 @@ $climate->yellow('Use the Imperative Mood ("Move cursor to..." not "Moves cursor
 $climate->yellow('Make it shorter than the yellow line.');
 $climate->yellow('--------------------------------------------------------------------------------');
 $subjectLine = $climate->input($emojiSpacing)->prompt();
-$subjectLine = $emojiSelected . ' ' . $subjectLine;
+$subjectLine = $subjectLine . ' ' . $emojiSelected;
+// $subjectLine = $emojiSelected . ' ' . $subjectLine;
 
 // Create the message body ----------------------------------------------------
 $climate->green('Now for the message body. You can use MarkDown here.');
